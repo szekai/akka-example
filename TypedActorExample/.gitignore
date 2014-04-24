@@ -6,6 +6,7 @@ syntax: glob
 *.bak
 #*.off
 *.old
+*.sc
 
 # eclipse conf file
 .settings
@@ -39,3 +40,11 @@ build.log
 
 #SHITTY output not in target directory
 build.log
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.next
+release.properties
+nb-configuration.xml
