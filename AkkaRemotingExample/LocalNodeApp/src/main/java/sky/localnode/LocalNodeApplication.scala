@@ -17,6 +17,9 @@ object LocalNodeApplication {
     val clientActor = system.actorOf(Props[LocalActor])
     clientActor ! "Hello"
     Thread.sleep(4000)
+    
+    val clientActor2 = system.actorOf(Props[LocalActor2])
+    clientActor2 ! "Hello"
     system.shutdown()
   }
 }

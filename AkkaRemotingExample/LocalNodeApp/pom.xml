@@ -65,6 +65,11 @@
             <artifactId>akka-remote_2.11</artifactId>
             <version>2.3.2</version>
         </dependency>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>RemoteNodeApp</artifactId>
+      <version>${project.version}</version>
+    </dependency>
   </dependencies>
 
   <build>
