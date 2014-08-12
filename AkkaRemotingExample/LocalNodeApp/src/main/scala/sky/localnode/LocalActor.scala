@@ -16,7 +16,7 @@ import scala.concurrent.duration._
 class LocalActor extends Actor with ActorLogging {
 
   //Get a reference to the remote actor
-  val remoteActor = context.actorSelection("akka.tcp://RemoteNodeApp@127.0.0.1:2552/user/remoteActor")
+  val remoteActor = context.actorSelection("akka.tcp://RemoteNodeApp@hadoop1:2552/user/remoteActor")
   implicit val timeout = Timeout(5 seconds)
   def receive: Receive = {
     case message: String =>
