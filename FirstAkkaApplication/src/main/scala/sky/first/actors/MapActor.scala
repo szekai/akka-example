@@ -17,7 +17,7 @@ class MapActor (reduceActor: ActorRef) extends Actor {
       reduceActor ! evaluateExpression(message)
   }
   def evaluateExpression(line: String): MapData = {
-    val dataList = line.toLowerCase().split("(\\s+)").filter(x => !x.isEmpty && !STOP_WORDS_LIST.contains(x)).map(x => x -> 1).toList
+    val dataList = line.toLowerCase().split("(\\s+)").filter(x => !x.isEmpty && !STOP_WORDS_LIST.contains(x)).map(x => x -> defaultCount).toList
     return new MapData(dataList)
   }
 }
