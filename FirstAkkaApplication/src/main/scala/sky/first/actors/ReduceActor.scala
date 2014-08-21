@@ -2,8 +2,6 @@ package sky.first.actors
 
 import akka.actor.{Actor, ActorRef}
 
-import scala.collection.mutable
-
 /**
  * Created by szekai on 20/08/2014.
  */
